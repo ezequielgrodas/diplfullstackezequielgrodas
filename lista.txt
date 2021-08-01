@@ -1,1 +1,5 @@
 helado
+congelados
+pan
+verdura
+semillas
