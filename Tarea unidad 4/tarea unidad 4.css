@@ -1,0 +1,35 @@
+.titulos {
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    background-color: burlywood;
+    text-align: center;
+}
+.subtitulos {
+    font-style: italic;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+ul {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.perfil {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: large;
+}
+.influencias {
+    font-weight: bolder;
+    font-style: italic;
+}
+.contacto{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+a:hover{
+    background-color: thistle;
+}
