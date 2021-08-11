@@ -1,0 +1,13 @@
+.rojo {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin-bottom: 30px;
+    padding: 20px;
+    color: white;
+}
+.azul {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}

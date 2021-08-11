@@ -1,0 +1,58 @@
+/* font-family: 'Bebas Neue', cursive; */
+/* font-family: 'Open Sans', sans-serif; */
+
+.titulos {
+    font-family: 'Bebas Neue', cursive;
+    color: blue;
+    background-color: burlywood;
+    text-align: center;
+    width: 50%;
+    padding: 0 0;
+    margin: auto;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px aquamarine;
+}
+.subtitulos {
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+ul {
+    font-family: 'Open Sans', sans-serif;}
+.perfil {
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: large;
+    background-color: aquamarine;
+}
+.influencias {
+    font-weight: bolder;
+    font-style: italic;
+}
+.contacto{
+    font-family: 'Open Sans', sans-serif;
+
+    text-align: center;
+
+}
+a:hover{
+    background-color: thistle;
+}
+.kevinshields {
+    display: block;
+    margin: auto;
+}
+.imagen {
+    background-color: black;
+    border-radius: 0px 20px 0px 20px;
+    margin: auto;
+}
+.datos {
+    background-color: cadetblue;
+    column-count: 3;
+}
