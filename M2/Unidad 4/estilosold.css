@@ -6,12 +6,12 @@ body {
 
     
 }
-.container-fluid {
+/* .container-fluid {
     display: flex;
     flex-wrap: nowrap;
     align-content: center;
     margin: 0 auto;
-}
+} */
 .col {
     display: flex;
     width: 100%;

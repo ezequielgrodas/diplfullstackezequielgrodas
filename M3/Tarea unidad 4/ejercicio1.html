@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ejercicio1.css">
+</head>
+<body id="cuerpo">
+    <div class="contenedor">
+        <div id="botonRojo"></div>
+        <div id="botonAzul"></div>
+        <div id="botonVerde"></div>
+    </div>
+    <br><br>
+    <div class="contenedorReset">
+        <button class="boton" id="reset">Reset</button>
+    </div>
+    
+
+
+<script>
+    let cuerpo = document.getElementById("cuerpo");
+    let rojo = document.getElementById("botonRojo");
+    let azul = document.getElementById("botonAzul");
+    let verde = document.getElementById("botonVerde");
+    let reset = document.getElementById("reset");
+
+    rojo.addEventListener('click',function(){
+        cuerpo.classList.add("rojo");
+        cuerpo.classList.remove("azul");
+        cuerpo.classList.remove("verde");      
+    })
+    azul.addEventListener('click',function(){
+        cuerpo.classList.add("azul");
+        cuerpo.classList.remove("rojo");
+        cuerpo.classList.remove("verde");      
+    })
+    verde.addEventListener('click',function(){
+        cuerpo.classList.add("verde");
+        cuerpo.classList.remove("azul");
+        cuerpo.classList.remove("rojo");      
+    })
+    reset.addEventListener('click',function(){
+        cuerpo.classList.remove("rojo");
+        cuerpo.classList.remove("azul");
+        cuerpo.classList.remove("verde");      
+    })
+
+
+
+</script>
+</body>
+</html>

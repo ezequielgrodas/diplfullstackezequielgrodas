@@ -1,0 +1,12 @@
+#contenedor.rojo{
+    background-color: red;
+}
+#contenedor.azul{
+    background-color: blue;
+}
+
+#contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;   
+}

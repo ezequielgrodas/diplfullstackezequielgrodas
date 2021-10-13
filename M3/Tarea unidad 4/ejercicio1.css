@@ -1,0 +1,46 @@
+body.rojo {
+    background-color: red;
+}
+body.azul {
+    background-color: blue;
+}
+body.verde {
+    background-color: green;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#botonRojo{
+    background-color: red;
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+}
+#botonAzul{
+    background-color: blue;
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+}
+#botonVerde{
+    background-color: green;
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+}
+.contenedorReset {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.boton {
+    width: 150px;
+    font-family: sans-serif;
+    font-size: 1em;
+    padding: 15px;
+    border-radius: 2px;
+    background-color: aquamarine;
+}

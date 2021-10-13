@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    
+
+<script>
+
+	
+	class  alumnos {
+		constructor(nombre,nota){
+			this.nombre = nombre;
+			this.nota = nota;
+			this.info = `<b>Alumno: </b>${this.nombre}<br>
+						<b>Nota: </b>${this.nota} <b style="color: green;">APROBADO</b><br><br>
+						`
+			this.infoDesaprobado = `<b>Alumno: </b>${this.nombre}<br>
+						<b>Nota: </b>${this.nota} <b style="color: red;">DESAPROBADO</b><br><br>`
+			}
+		verInfo = ()=> {
+				if (this.nota < 7){
+				document.write(this.infoDesaprobado);
+				}else{
+				document.write(this.info);
+				}
+				}
+		}
+		
+		let alumno1 = new alumnos("Juan Gomez",7)
+		let alumno2 = new alumnos("Pedro Rodriguez",4)
+		let alumno3 = new alumnos("Roxana Garcia",8)
+		let alumno4 = new alumnos("Luciano Lopez",5)
+		let alumno5 = new alumnos("Fernanda Gimenez",6)
+		let alumno6 = new alumnos("Florencia Martinez",10)
+        let alumno7 = new alumnos("Raul Sanchez",7)
+        let alumno8 = new alumnos("Sandra Figueroa",8)
+		
+		
+		
+		alumno1.verInfo();
+		alumno2.verInfo();
+		alumno3.verInfo();
+		alumno4.verInfo();
+		alumno5.verInfo();
+		alumno6.verInfo();
+        alumno7.verInfo();
+        alumno8.verInfo();
+
+	
+</script>
+
+
+</body>
+</html>
