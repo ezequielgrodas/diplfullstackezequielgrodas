@@ -1,2 +1,13 @@
+<h1>{{title}}</h1>
+{{#if conocido}}
 <h1>Esto es {{nombre}}</h1>
 <p>ingresaste a la pagina {{vistas}} veces</p>
+<a href="/salir">Salir</a></p>
+{{/if}}
+
+{{#unless conocido}}
+<p>Debes ingresar un nombre de usuario para poder ver esta pagina</p>
+<form action="/ingresar" method="post">
+    <input type="text" name="nombre"><button>Ingresar</button>
+</form>
+{{/unless}}

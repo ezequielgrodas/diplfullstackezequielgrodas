@@ -40,6 +40,7 @@ app.get('/', function (req, res){
     conocido: conocido,
     nombre: req.session.nombre
   });
+  
 });
 
 app.post('/ingresar', function (req, res){
@@ -47,6 +48,13 @@ app.post('/ingresar', function (req, res){
     req.session.nombre = req.body.nombre
   }
   res.redirect('/');
+});
+
+app.post('/nosotros', function (req, res){
+  if (req.body.nombre) {
+    req.session.nombre = req.body.nombre
+  }
+  res.redirect('/nosotros');
 });
 
 app.get('/salir', function (req, res){
@@ -67,7 +75,10 @@ app.use(function(req, res, next){
 });
 
 app.get('/nosotros', function(req, res){
+  var conocido = Boolean(req.session.nombre);
+  
   res.render('nosotros', {
+    conocido: conocido,
     nombre: 'nosotros',
     vistas: req.session.vistas[req.originalUrl]
   });
